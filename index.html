@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск покемона</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Поиск покемона</h2>
+
+    <form class="search-form">
+        <input type="text" placeholder="Введите имя или id покемона..." class="pokemon-input">
+        <button type="submit" class="btn-search">
+            Найти
+        </button>
+    </form>
+
+    <p class="error-message" role="alert" hidden>
+    </p>
+
+    <div class="pokemon-card">
+        <h3 class="pokemon-name">имя</h3>
+
+        <img class="pokemon-image">
+
+        <h4 class="pokemon-stats-title">Характеристики</h4>
+
+        <p class="pokemon-weight">
+            <b>Вес:</b> <span class="pokemon-weight-value"></span>
+        </p>
+
+        <p class="pokemon-height">
+            <b>Рост:</b> <span class="pokemon-height-value"></span>
+        </p>
+
+        <p class="pokemon-id">
+            <b>ID:</b> <span class="pokemon-id-value"></span>
+        </p>
+
+        <h4 class="pokemon-types-title">Типы</h4>
+
+        <div class="pokemon-types">
+            <p class="pokemon-type"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
